@@ -26,5 +26,5 @@ function changeTheme() {
 
 // TO RETURN
 function toReturn() {
-  location.pathname = '/AboutBlank/';
+  location.pathname = '/index.html';
 }
