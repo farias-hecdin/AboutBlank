@@ -1,0 +1,117 @@
+/* HTML Tags
+   ====================================================================== */
+
+/* All */
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--fo-base);
+}
+
+/* Individuals */
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  padding: 2rem 3rem 4rem !important;
+  background-color: var(--th-background-pry);
+}
+
+img {
+  display: block;
+}
+
+code {
+  margin: 0 0.1rem;
+  font-family: var(--fo-secondary);
+  color: #c99aff !important;
+}
+
+button {
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+}
+
+img:not([alt]) {
+  border: 0.2rem solid red;
+}
+
+p {
+  margin-bottom: 0;
+  line-height: 1.4;
+}
+
+/* Groups */
+
+ul > p,
+ol > p {
+  margin-left: -1rem !important;
+}
+
+ul, ol {
+  padding-left: 1rem !important;
+  margin: 1rem 0 !important;
+}
+
+b,
+strong {
+  font-weight: var(--fo-bold);
+}
+
+h1,
+h2 {
+  font-family: var(--fo-primary);
+  color: var(--th-text-title);
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--fo-primary);
+  color: var(--th-text-alt);
+}
+
+input,
+label,
+button,
+div,
+a,
+p,
+li,
+summary
+th,
+tr {
+  font-family: var(--fo-base);
+  font-weight: var(--fo-regular);
+}
+
+p,
+li,
+th,
+tr {
+  color: var(--th-text);
+}
+
+a:link,
+a:visited {
+  color: var(--th-link);
+  text-decoration: underline;
+}
+
+button,
+summary {
+  white-space: nowrap;
+  outline: none;
+  cursor: pointer;
+}

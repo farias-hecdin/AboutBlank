@@ -1,0 +1,35 @@
+/* FONTS
+   ====================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+
+/* VARIABLES
+   ====================================================================== */
+
+:root {
+  /* Fonts */
+  
+  --fo-base: "Nunito Sans", sans-serif;
+  --fo-primary: "Ubuntu", sans-serif;
+  
+  /* Font-weight */
+  
+  --fo-black: 900;
+  --fo-extrabold: 800;
+  --fo-bold: 700;
+  --fo-semibold: 600;
+  --fo-medium: 500;
+  --fo-regular: 400;
+  --fo-light: 300;
+  --fo-extralight: 200;
+  --fo-thin: 100;
+  
+  /* Font-size */
+  
+  --fo-large: 5rem;
+  --fo-medium: 2.5rem;
+  --fo-normal: 1rem;
+  --fo-small: 0.5rem;
+}

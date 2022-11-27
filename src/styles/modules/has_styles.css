@@ -1,0 +1,63 @@
+/* has_x
+   ====================================================================== */
+
+.has_grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+
+/* Flexbox */
+
+.has_rows {
+  display: flex;
+  flex-direction: row;
+}
+
+.has_rows > *:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.has_columns {
+  display: flex;
+  flex-direction: column;
+}
+
+.has_columns > * {
+  flex-grow: 1;
+  flex: 1 0 0;
+}
+
+
+/* Table */
+
+.has_table {
+  margin: 1rem 0;
+  table-layout: fixed;
+  width: 100%;
+  border: none;
+}
+
+.has_table th {
+  background-color: var(--th-table);
+}
+
+.has_table tr:hover {
+  background-color: var(--th-table-hover);
+  color: var(--th-text-alt);
+}
+
+.has_table thead,
+.has_table th {
+  font-weight: var(--fo-bold);
+}
+
+.has_table th,
+.has_table td {
+  padding: .5rem;
+}
+
+.has_table td {
+  border-bottom: 1px solid var(--th-table-brd);
+}

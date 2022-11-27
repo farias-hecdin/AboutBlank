@@ -1,0 +1,73 @@
+/* is_x
+   ====================================================================== */
+
+.is_upper {
+  order: -1;
+}
+
+.is_rounded {
+  border-radius: 1rem;
+}
+
+.is_opacity {
+ opacity: 0.25;
+ transition: .2s;
+}
+
+.is_opacity:hover {
+  opacity: 1;
+}
+
+
+/* Not */
+
+.is_noList > li {
+  list-style: none;
+}
+
+.is_noDisplay {
+  display: none;
+}
+
+
+/* Size */
+
+.is_full {
+  width: 100%;
+}
+
+.is_smallest, .is_smaller, .is_small,
+.is_big, .is_bigger, .is_biggest,
+.is_normal {
+  width: var(--size);
+  height: var(--size);
+  margin: 1rem;
+  --pixel: 250px;
+}
+
+.is_smallest { --size: calc(var(--pixel) / 4.00); }
+.is_smaller  { --size: calc(var(--pixel) / 2.70); }
+.is_small    { --size: calc(var(--pixel) / 2.00); }
+.is_normal   { --size: var(--pixel); }
+.is_big      { --size: calc(var(--pixel) * 1.25); }
+.is_bigger   { --size: calc(var(--pixel) * 1.50); }
+.is_biggest  { --size: calc(var(--pixel) * 2.00); }
+
+
+/* Watch */
+
+.is_watch {
+  outline: 2px dashed var(--th-border-alt);
+}
+
+.is_watchAll * {
+  outline: 2px solid var(--th-border-hover);
+}
+
+
+/* State */
+
+.is_hover:hover {
+  border-radius: 0;
+  outline: .15rem dashed var(--th-border-hover);
+}

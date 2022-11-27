@@ -1,0 +1,42 @@
+/* THEMES
+   ====================================================================== */
+
+body[data-theme="normal"] {
+  --th-background-pry: var(--co-CuriousBlue);
+  --th-background-alt: var(--co-White);
+  --th-button: var(--co-CuriousBlue);
+  --th-button-text: var(--co-White);
+  --th-button-hover: var(--co-Black);
+  --th-text-title: var(--co-CuriousBlue);
+  --th-text-subtitle: var(--co-Black);
+  --th-text: var(--co-Black);
+  --th-border-pry: var(--co-MineShaft);
+  --th-border-alt: var(--co-Terracotta);
+  --th-border-hover: var(--co-CuriousBlue);
+  --th-other-input: var(--co-LinkWater);
+  --th-other-box: var(--co-SoothingBreeze);
+  --th-table: var(--co-Cultured);
+  --th-table-hover: var(--co-PapayaWhip);
+  --th-table-brd: var(--co-SoothingBreeze);
+  --th-link: var(--co-CuriousBlue);
+}
+
+body[data-theme="dark"] {
+  --th-background-pry: var(--co-Woodsmoke);
+  --th-background-alt: var(--co-EbonyClay);
+  --th-button: var(--co-CuriousBlue);
+  --th-button-text: var(--co-White);
+  --th-button-hover: var(--co-Black);
+  --th-text-title: var(--co-Polar);
+  --th-text-alt: var(--co-Polar);
+  --th-text: var(--co-RegentGray);
+  --th-border-pry: var(--co-MineShaft);
+  --th-border-alt: var(--co-Terracotta);
+  --th-border-hover: var(--co-CuriousBlue);
+  --th-other-input: var(--co-LimedSpruce);
+  --th-other-box: var(--co-SoothingBreeze);
+  --th-table: var(--co-JapaneseIndigo);
+  --th-table-hover: var(--co-Indigo);
+  --th-table-brd: var(--co-RegentGray);
+  --th-link: var(--co-CuriousBlue);
+}
