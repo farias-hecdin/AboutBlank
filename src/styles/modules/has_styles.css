@@ -7,26 +7,28 @@
   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
 }
 
+
 /* Flexbox */
 
-.has_rows {
+.has_row {
   display: flex;
   flex-direction: row;
 }
 
-.has_rows > *:not(:last-child) {
+.has_row > *:not(:last-child) {
   margin-right: 1rem;
 }
 
-.has_columns {
+.has_column {
   display: flex;
   flex-direction: column;
 }
 
-.has_columns > * {
+.has_column > * {
   flex-grow: 1;
   flex: 1 0 0;
 }
+
 
 /* Table */
 
