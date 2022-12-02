@@ -12,6 +12,7 @@
   font-family: var(--fo-base);
 }
 
+
 /* Individuals */
 
 html {
@@ -48,20 +49,15 @@ img:not([alt]) {
 
 p {
   margin-bottom: 0;
-  line-height: 1.4;
+  line-height: 1.5;
 }
+
+li {
+  margin-bottom: 0.25rem;
+}
+
 
 /* Groups */
-
-ul > p,
-ol > p {
-  margin-left: -1rem !important;
-}
-
-ul, ol {
-  padding-left: 1rem !important;
-  margin: 1rem 0 !important;
-}
 
 b,
 strong {
@@ -72,6 +68,7 @@ h1,
 h2 {
   font-family: var(--fo-primary);
   color: var(--th-text-title);
+  margin-bottom: 1rem;
 }
 
 h3,
@@ -80,6 +77,7 @@ h5,
 h6 {
   font-family: var(--fo-primary);
   color: var(--th-text-alt);
+  margin-bottom: 1rem;
 }
 
 input,
@@ -91,7 +89,7 @@ p,
 li,
 summary
 th,
-tr {
+td {
   font-family: var(--fo-base);
   font-weight: var(--fo-regular);
 }
@@ -99,7 +97,7 @@ tr {
 p,
 li,
 th,
-tr {
+td {
   color: var(--th-text);
 }
 
@@ -114,4 +112,93 @@ summary {
   white-space: nowrap;
   outline: none;
   cursor: pointer;
+}
+
+
+/* Rules */
+
+ul > p,
+ol > p {
+  margin-left: -1rem !important;
+}
+
+ul, ol {
+  padding-left: 1rem !important;
+  margin: 1rem 0 !important;
+}
+
+
+/* Styling */
+
+main {
+  padding: 2rem;
+  min-height: 99vh;
+  border-radius: .5rem;
+  background-color: var(--th-background-alt);
+}
+
+button {
+  margin: 1rem 0;
+  padding: 0.5rem 2rem;
+  border: 0;
+  border-radius: 1rem;
+  color: var(--th-button-text);
+  background-color: var(--th-button);
+  font-weight: var(--fo-bold);
+}
+
+button:active {
+  background-color: var(--th-button-hover);
+}
+
+button:not(:last-child) {
+  margin: 1rem 0.5rem;
+}
+
+span {
+  border-bottom: .15rem solid var(--th-border-alt);
+  font-family: inherit;
+  font-size: inherit;
+  color: var(--th-border-alt);
+}
+
+hr {
+  margin: 1rem 0;
+}
+
+input,
+textarea {
+  padding: 0.5rem 2rem;
+  border: 1px solid var(--co-blank);
+  border-radius: 1rem;
+  background-color: var(--th-other-input);
+  color: var(--th-text);
+}
+
+input:hover,
+textarea:hover {
+  border-color: var(--th-text);
+  transition: 0.1s;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  color: var(--th-text-alt);
+}
+
+
+/* Unique */
+
+#btn {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+}
+
+#id_btnTheme,
+#id_btnReturn {
+  padding: .5rem 1rem;
+  border: 1px solid #fff;
+  background-color: var(--th-background-pry);
 }

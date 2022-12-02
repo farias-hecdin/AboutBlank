@@ -3,20 +3,20 @@
 
 :root {
   --co-blank: transparent;
-  --co-Terracotta: #E17055;
+  --co-Terracotta: #e17055;
   --co-MineShaft: #333333;
-  --co-LinkWater: #F4F5FC;
-  --co-White: #FFFFFF;
+  --co-LinkWater: #f4f5fc;
+  --co-White: #ffffff;
   --co-Black: #242424;
-  --co-CuriousBlue: #2E86DE;
-  --co-SoothingBreeze: #00CEC9;
+  --co-CuriousBlue: #2e86de;
+  --co-SoothingBreeze: #00cec9;
   --co-Woodsmoke: #111113;
   --co-EbonyClay: #273039;
-  --co-Polar: #F4F9FD;
-  --co-RegentGray: #828E9A;
-  --co-LimedSpruce: #333D47;
-  --co-PapayaWhip: #FCF3CF;
-  --co-Cultured: #F6F6F6;
+  --co-Polar: #f4f9fd;
+  --co-RegentGray: #828e9a;
+  --co-LimedSpruce: #333d47;
+  --co-PapayaWhip: #fcf3cf;
+  --co-Cultured: #f6f6f6;
   --co-JapaneseIndigo: #273746;
   --co-Indigo: #154360;
 }

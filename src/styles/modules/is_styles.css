@@ -10,8 +10,8 @@
 }
 
 .is_opacity {
- opacity: 0.25;
- transition: .2s;
+  opacity: 0.25;
+  transition: 0.2s;
 }
 
 .is_opacity:hover {
@@ -36,8 +36,12 @@
   width: 100%;
 }
 
-.is_smallest, .is_smaller, .is_small,
-.is_big, .is_bigger, .is_biggest,
+.is_smallest,
+.is_smaller,
+.is_small,
+.is_big,
+.is_bigger,
+.is_biggest,
 .is_normal {
   width: var(--size);
   height: var(--size);
@@ -45,13 +49,27 @@
   --pixel: 250px;
 }
 
-.is_smallest { --size: calc(var(--pixel) / 4.00); }
-.is_smaller  { --size: calc(var(--pixel) / 2.70); }
-.is_small    { --size: calc(var(--pixel) / 2.00); }
-.is_normal   { --size: var(--pixel); }
-.is_big      { --size: calc(var(--pixel) * 1.25); }
-.is_bigger   { --size: calc(var(--pixel) * 1.50); }
-.is_biggest  { --size: calc(var(--pixel) * 2.00); }
+.is_smallest {
+  --size: calc(var(--pixel) / 4);
+}
+.is_smaller {
+  --size: calc(var(--pixel) / 2.7);
+}
+.is_small {
+  --size: calc(var(--pixel) / 2);
+}
+.is_normal {
+  --size: var(--pixel);
+}
+.is_big {
+  --size: calc(var(--pixel) * 1.25);
+}
+.is_bigger {
+  --size: calc(var(--pixel) * 1.5);
+}
+.is_biggest {
+  --size: calc(var(--pixel) * 2);
+}
 
 
 /* Watch */
@@ -69,5 +87,22 @@
 
 .is_hover:hover {
   border-radius: 0;
-  outline: .15rem dashed var(--th-border-hover);
+  outline: 0.15rem dashed var(--th-border-hover);
+}
+
+
+/* Other */
+
+section,
+.is_block {
+  display: flex;
+  flex-direction: column;
+}
+
+article,
+.is_box {
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border: 1px solid var(--th-other-box);
+  border-radius: .5rem;
 }

@@ -16,17 +16,14 @@
 @import "base/colors.css";
 @import "base/themes.css";
 
-
 /* ELEMENTALS
    *********************************** */
 
 @import "elementals/normalize.css";
 @import "elementals/tags.css";
 
-
 /* MODULES
    *********************************** */
 
-@import "modules/theTags.css";
 @import "modules/has_styles.css";
 @import "modules/is_styles.css";

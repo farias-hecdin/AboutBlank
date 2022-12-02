@@ -7,7 +7,6 @@
   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
 }
 
-
 /* Flexbox */
 
 .has_rows {
@@ -28,7 +27,6 @@
   flex-grow: 1;
   flex: 1 0 0;
 }
-
 
 /* Table */
 
@@ -55,7 +53,7 @@
 
 .has_table th,
 .has_table td {
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .has_table td {
