@@ -1,7 +1,7 @@
-/* has_x
+/* has
    ====================================================================== */
 
-.has_grid {
+.has_Grid {
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
@@ -10,21 +10,21 @@
 
 /* Flexbox */
 
-.has_row {
+.has_Row {
   display: flex;
   flex-direction: row;
 }
 
-.has_row > *:not(:last-child) {
+.has_Row > *:not(:last-child) {
   margin-right: 1rem;
 }
 
-.has_column {
+.has_Column {
   display: flex;
   flex-direction: column;
 }
 
-.has_column > * {
+.has_Column > * {
   flex-grow: 1;
   flex: 1 0 0;
 }
@@ -32,32 +32,32 @@
 
 /* Table */
 
-.has_table {
-  margin: 1rem 0;
+.has_Table {
+  margin: 2rem 0;
   table-layout: fixed;
   width: 100%;
   border: none;
 }
 
-.has_table th {
+.has_Table th {
   background-color: var(--th-table);
 }
 
-.has_table tr:hover {
+.has_Table tr:hover {
   background-color: var(--th-table-hover);
   color: var(--th-text-alt);
 }
 
-.has_table thead,
-.has_table th {
+.has_Table thead,
+.has_Table th {
   font-weight: var(--fo-bold);
 }
 
-.has_table th,
-.has_table td {
+.has_Table th,
+.has_Table td {
   padding: 0.5rem;
 }
 
-.has_table td {
+.has_Table td {
   border-bottom: 1px solid var(--th-table-brd);
 }

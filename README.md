@@ -1,19 +1,27 @@
 # AboutBlank
 
-> Test the DOM without worrying about CSS.
+> Test the DOM without worrying about CSS
+
+## Description
 
 This is just a web template with CSS selectors defined for testing javascript functions in the DOM.
 
 ## Predefined selectors
 
 ```
-is_block is_box
-is_upper  is_rounded  is_opacity
-is_noList  is_noDisplay
-is_smallest  is_smaller  is_small  is_big  is_bigger  is_biggest  is_normal  is_full
-is_watch  is_watchAll
-is_hover
-has_column has_row  has_table
+==== Parents ====
+has_Column  has_Row
+has_Table
+
+==== Children ====
+is_Block  is_Box
+is_Hover
+is_Upper
+is_Rounded
+is_Opacity
+is_Smallest  is_Smaller  is_Small  is_Big  is_Bigger  is_Biggest  is_Normal  is_Full
+is_Watch  is_WatchAll
+is_NoList  is_NoDisplay
 ```
 
 ## Recommendations

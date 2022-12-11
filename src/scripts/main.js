@@ -11,6 +11,7 @@ if (localStorage.db_theme != null) {
   document.body.dataset.theme = localStorage.getItem("db_theme");
 }
 
+
 // CHANGE THEME
 function changeTheme() {
   let elem = document.body.dataset;

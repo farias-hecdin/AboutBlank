@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="../src/styles/main.css" />
+    <link rel="stylesheet" href="../src/styles/main-min.css" />
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Demo</title>
   </head>
   <body data-theme="normal">
-    <div id="btn">
+    <div id="id_btn">
       <button id="id_btnTheme"></button><button id="id_btnReturn"></button>
     </div>
     <main>
@@ -28,13 +28,17 @@
         <li>Sed sed rhoncus</li>
         <li>Pulvinar lobortis</li>
       </ul>
-      <div class="has_grid">
-        <img class="is_small is_opacity" src="../src/icons/cat.svg" alt="#" />
-        <img class="is_small" src="../src/icons/dog.svg" alt="#" />
-        <img class="is_small is_watch" src="../src/icons/cow.svg" alt="#" />
-        <img class="is_small" src="../src/icons/fox.svg" alt="#" />
-        <img class="is_small" src="../src/icons/pig.svg" alt="#" />
+      <div class="has_Grid">
+        <img class="is_Small is_Opacity" src="../src/icons/cat.svg" alt="#" />
+        <img class="is_Small" src="../src/icons/dog.svg" alt="#" />
+        <img class="is_Small is_Watch" src="../src/icons/cow.svg" alt="#" />
+        <img class="is_Small" src="../src/icons/fox.svg" alt="#" />
+        <img class="is_Small" src="../src/icons/pig.svg" alt="#" />
       </div>
+      <form>
+        <input type="text" name="name" placeholder="name" required />
+        <input type="submit" value="Send" />
+      </form>
       <br />
       <article>
         <h4>Proin et aliquam neque</h4>
@@ -46,7 +50,7 @@
         </p>
         <input type="text" placeholder="Sit amet tincidunt..." />
         <button>Tristique consequat</button>
-        <table class="has_table">
+        <table class="has_Table">
           <tr>
             <th>Row 1</th>
             <th>Row 2</th>
@@ -65,7 +69,10 @@
           <tr>
             <td>Cell</td>
             <td>Cell</td>
-            <td>Cell</td>
+            <td>
+              <button>Button A</button>
+              <button>Button B</button>
+            </td>
           </tr>
         </table>
       </article>

@@ -8,11 +8,9 @@
 *::after {
   padding: 0;
   margin: 0;
+  outline: none;
   box-sizing: border-box;
-  font-family: var(--fo-base);
 }
-
-
 
 
 /* Individuals */
@@ -23,9 +21,12 @@ html {
 }
 
 body {
+  padding: 2rem 3rem 4rem;
   min-height: 100vh;
   width: 100vw;
-  padding: 2rem 3rem 4rem !important;
+  font-family: var(--fo-base);
+  font-weight: var(--fo-regular);
+  color: var(--th-text);
   background-color: var(--th-background-pry);
 }
 
@@ -33,15 +34,9 @@ img {
   display: block;
 }
 
-code {
-  margin: 0 0.1rem;
-  font-family: var(--fo-secondary);
-  color: #c99aff !important;
-}
-
 button {
-  text-decoration: none;
   border: none;
+  text-decoration: none;
   background-color: transparent;
 }
 
@@ -50,7 +45,7 @@ img:not([alt]) {
 }
 
 p {
-  margin-bottom: 0;
+  margin-bottom: 1rem;
   line-height: 1.5;
 }
 
@@ -60,11 +55,6 @@ li {
 
 
 /* Groups */
-
-b,
-strong {
-  font-weight: var(--fo-bold);
-}
 
 h1,
 h2 {
@@ -82,25 +72,9 @@ h6 {
   margin-bottom: 1rem;
 }
 
-input,
-label,
-button,
-div,
-a,
-p,
-li,
-summary
-th,
-td {
-  font-family: var(--fo-base);
-  font-weight: var(--fo-regular);
-}
-
-p,
-li,
-th,
-td {
-  color: var(--th-text);
+b,
+strong {
+  font-weight: var(--fo-bold);
 }
 
 a:link,
@@ -110,7 +84,8 @@ a:visited {
 }
 
 button,
-summary {
+summary,
+input[type="submit"] {
   white-space: nowrap;
   outline: none;
   cursor: pointer;
@@ -139,8 +114,8 @@ main {
   background-color: var(--th-background-alt);
 }
 
-button {
-  margin: 1rem 0;
+button,
+input[type="submit"] {
   padding: 0.5rem 2rem;
   border: 0;
   border-radius: 1rem;
@@ -149,12 +124,14 @@ button {
   font-weight: var(--fo-bold);
 }
 
-button:active {
+button:active,
+input[type="submit"]:active {
   background-color: var(--th-button-hover);
 }
 
-button:not(:last-child) {
-  margin: 1rem 0.5rem;
+button:not(:last-child),
+input:not(:last-child) {
+  margin-right: .5rem;
 }
 
 span {
@@ -173,8 +150,8 @@ textarea {
   padding: 0.5rem 2rem;
   border: 1px solid var(--co-blank);
   border-radius: 1rem;
-  background-color: var(--th-other-input);
   color: var(--th-text);
+  background-color: var(--th-other-input);
 }
 
 input:hover,
@@ -185,22 +162,22 @@ textarea:hover {
 
 input:focus,
 textarea:focus {
-  outline: none;
   color: var(--th-text-alt);
+  outline: none;
 }
 
 
 /* Unique */
 
-#btn {
+#id_btn {
   position: absolute;
-  top: 1px;
-  left: 1px;
+  top: 1rem;
+  left: 1rem;
 }
 
 #id_btnTheme,
 #id_btnReturn {
   padding: .5rem 1rem;
-  border: 1px solid #fff;
+  border: 1px solid #FFF;
   background-color: var(--th-background-pry);
 }
